@@ -1,0 +1,26 @@
+.flex{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 100px;
+}
+
+.card {
+  margin: 10px;
+}
+
+@media (max-width: 1024px) {
+  
+  .flex{
+    display: block;
+  }
+  .card {
+    margin: 20px auto;
+    mix-width: 90%;
+  }
+}
+
+.description {
+  margin: 10px 100px;
+  font-size: 25px;
+}

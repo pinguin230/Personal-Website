@@ -1,0 +1,22 @@
+.avatar-container-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar-container {
+  border: 2px solid;
+  border-radius: 50%;
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  .avatar {
+    width: 100%;
+    transform: scale(1.2);  // Adjust the scale percentage as needed (e.g., 1.2 for 120%)
+    transform-origin: top;
+  }
+}

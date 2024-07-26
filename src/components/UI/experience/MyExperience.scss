@@ -1,0 +1,53 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.courses {
+  display: flex;
+  flex-direction: column;
+}
+
+.course {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.course:last-child {
+  border-bottom: none;
+}
+
+.course-details {
+  max-width: 70%;
+}
+
+.course-time {
+  max-width: 30%;
+  text-align: right;
+  //color: #00a4a2;
+}
+
+.additional-info {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+.additional-info a {
+  color: #00a4a2;
+  text-decoration: none;
+}
+
+.additional-info a:hover {
+  text-decoration: underline;
+}

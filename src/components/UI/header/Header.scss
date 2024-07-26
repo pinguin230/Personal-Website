@@ -1,0 +1,33 @@
+a {
+  color: inherit; /* Встановити колір тексту відповідно до батьківського елемента */
+  text-decoration: none; /* Видалити підкреслення */
+  font-weight: normal; /* Зробити текст нормальної товщини */
+  font-size: inherit; /* Встановити розмір шрифту відповідно до батьківського елемента */
+  background: none; /* Видалити фонове зображення чи колір */
+  padding: 0; /* Скинути відступи */
+  margin: 0; /* Скинути зовнішні відступи */
+  border: none; /* Видалити рамку */
+}
+
+body{
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+
+.navbar{
+  padding: 30px 70px;
+}
+
+.collapse{
+  justify-content: right;
+}
+
+.nav-item, .nav-link{
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.main-container{
+  padding: 50px 30px;
+}

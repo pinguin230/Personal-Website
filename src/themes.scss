@@ -1,0 +1,33 @@
+$dark-theme: (
+        background-color: #1a1a1a !important,
+        text-color: #ffffff !important,
+        portfolio-bg: #d3d3d3 !important,
+        color: #ffffff !important,
+        border-color: #ffffff !important,
+);
+
+$light-theme: (
+        background-color: #ffffff !important,
+        text-color: #000000 !important,
+        portfolio-bg: #d3d3d3 !important,
+        color: #000000 !important,
+        border-color: #000000 !important,
+);
+
+@mixin theme($theme-map) {
+  background-color: map-get($theme-map, background-color);
+  color: map-get($theme-map, text-color);
+
+  .portfolio {
+    background-color: map-get($theme-map, portfolio-bg);
+  }
+
+  .avatar-container {
+    border-color: map-get($theme-map, border-color);
+  }
+
+  .theme-toggle-button{
+    background-color: inherit;
+    border: none;
+  }
+}

@@ -1,0 +1,10 @@
+
+@import "./themes.scss";
+
+body.dark {
+    @include theme($dark-theme);
+}
+
+body.light {
+    @include theme($light-theme);
+}
