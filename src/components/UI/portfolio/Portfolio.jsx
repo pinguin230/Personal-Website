@@ -5,7 +5,7 @@ import "./Portfolio.scss";
 const Portfolio = () => {
   return (
     <div>
-      <h1>Portfolio</h1>
+      <h1 style={{marginTop: 30}}>Portfolio</h1>
       <p className="description">I specialize in creating dynamic and responsive user interfaces using React. I craft modern web applications with HTML, CSS, and JavaScript, ensuring seamless user experiences. I am skilled in using SCSS for enhanced styling and TypeScript for robust, type-safe code. My strong understanding of algorithms, data structures, and object-oriented programming enables me to develop efficient and maintainable code. Additionally, I have experience integrating RESTful APIs and managing state with Redux for scalable and performant applications.</p>
       <div className="card-container">
         <div className="card max-w-md flex-1">

@@ -56,6 +56,7 @@
       }
 
       p {
+        font-size: 20px;
         margin-bottom: 10px;
       }
     }
@@ -64,6 +65,7 @@
   @media (max-width: 767.98px) {
     .text-column {
       p {
+        text-align: left;
         font-size: 1rem;
       }
     }

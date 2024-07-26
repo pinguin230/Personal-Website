@@ -22,8 +22,8 @@ function App() {
       <Header/>
       <div className="main-container">
         <Introduction/>
-        <SocialMediaLinks/>
         <MyAvatar/>
+        <SocialMediaLinks/>
         <MyExperience/>
         <Services/>
         <Portfolio/>

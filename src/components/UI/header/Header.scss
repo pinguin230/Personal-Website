@@ -19,7 +19,7 @@ body{
   display: flex;
   padding: 30px 70px;
   justify-content: space-between;
-  align-items: end;
+  align-items: center;
 }
 
 .navbar-nav, .navbar{
@@ -35,6 +35,7 @@ ul{
 
 .nav-item-list{
   display: flex;
+  margin: 0;
 }
 
 .nav-item, .nav-link{

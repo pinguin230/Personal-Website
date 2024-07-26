@@ -20,7 +20,6 @@ const Services = () => {
           <div className="service">
             <img src={frontendPhoto} alt="Frontend Development" />
             <h2>Frontend Development</h2>
-            <p>Responsive Webpages.</p>
             <h3>What I can do</h3>
             <p>Utilizing my expertise in HTML, CSS, and JavaScript alongside React, I develop visually stunning and highly responsive user interfaces that emphasize usability and user experience. My meticulous attention to detail and deep understanding of design principles enable me to create intuitive and engaging web experiences for users.
             </p>
