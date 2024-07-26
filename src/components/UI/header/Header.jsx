@@ -6,14 +6,9 @@ import ToggleButton from "../theme-button/ToggleButton.jsx";
 const Header = () => {
   return (
     <header>
-      <nav className="navbar navbar-expand-lg">
+      <nav className="header">
         <a className="nav-item" href="#">Personal Website</a>
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
+          <ul className="nav-item-list">
             <li>
               <ToggleButton/>
             </li>
@@ -21,7 +16,6 @@ const Header = () => {
               <a className="nav-item nav-item-portfolio" href="#">Portfolio</a>
             </li>
           </ul>
-        </div>
       </nav>
 
     </header>

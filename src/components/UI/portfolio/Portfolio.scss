@@ -1,4 +1,4 @@
-.flex{
+.card-container{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -9,18 +9,28 @@
   margin: 10px;
 }
 
-@media (max-width: 1024px) {
-  
+.description {
+  margin: 10px 100px;
+  font-size: 25px;
+}
+
+@media (max-width: 767.98px) {
   .flex{
     display: block;
   }
   .card {
     margin: 20px auto;
-    mix-width: 90%;
+    min-width: 300px;
   }
-}
 
-.description {
-  margin: 10px 100px;
-  font-size: 25px;
+  .card-container{
+    display: inline;
+    margin: 0 100px;
+  }
+
+
+  .description {
+    font-size: 1rem;
+    margin: 10px 10px;
+  }
 }

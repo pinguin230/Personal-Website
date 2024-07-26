@@ -19,6 +19,10 @@
     flex: 4;
     padding: 20px;
 
+    p{
+      font-size: 25px;
+    }
+
     a {
       text-decoration: none;
 
@@ -56,4 +60,17 @@
       }
     }
   }
+
+  @media (max-width: 767.98px) {
+    .text-column {
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .service-column, .service {
+      padding: 0 !important;
+    }
+  }
 }
+

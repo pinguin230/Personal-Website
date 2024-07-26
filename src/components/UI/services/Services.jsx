@@ -11,7 +11,7 @@ const Services = () => {
       <h1>Services I offer</h1>
       <div className="content">
         <div className="text-column">
-          <p style={{fontSize: 25}}>
+          <p>
             As a frontend developer, I specialize in creating versatile and responsive web interfaces using <strong>React</strong> and <strong>TypeScript</strong>. I leverage my skills in HTML, CSS, and JavaScript to build visually appealing and user-friendly applications. With a deep understanding of React, <strong>RTK
             (Redux Toolkit)</strong>, and TypeScript, I ensure efficient state management and robust application architecture. My knowledge of algorithms, data structures, and OOP principles allows me to deliver high-quality, maintainable code.
           </p>

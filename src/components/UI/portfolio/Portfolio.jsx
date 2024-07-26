@@ -4,10 +4,10 @@ import "./Portfolio.scss";
 
 const Portfolio = () => {
   return (
-    <>
+    <div>
       <h1>Portfolio</h1>
       <p className="description">I specialize in creating dynamic and responsive user interfaces using React. I craft modern web applications with HTML, CSS, and JavaScript, ensuring seamless user experiences. I am skilled in using SCSS for enhanced styling and TypeScript for robust, type-safe code. My strong understanding of algorithms, data structures, and object-oriented programming enables me to develop efficient and maintainable code. Additionally, I have experience integrating RESTful APIs and managing state with Redux for scalable and performant applications.</p>
-      <div className="flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap justify-center">
+      <div className="card-container">
         <div className="card max-w-md flex-1">
           <img src={EventRegistrationApp} className="card-img-top" alt="Event Registration App"/>
           <div className="card-body">
@@ -31,7 +31,7 @@ const Portfolio = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
 
   );
 };
