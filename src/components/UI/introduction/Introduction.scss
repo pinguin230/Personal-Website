@@ -1,32 +1,81 @@
-.introduction-container{
+.introduction-container {
   padding: 50px 100px 0 100px;
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeIn 1s ease-out forwards;
 }
 
-.developer-name{
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.developer-name {
   font-weight: 400;
   font-size: 72px;
+  opacity: 0;
+  animation: fadeInName 1.2s ease-out forwards;
 }
 
-.developer-profession{
+@keyframes fadeInName {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.developer-profession {
   font-weight: 600;
   font-size: 40px;
   margin-top: 10px;
-  opacity: 0.8;
+  opacity: 0;
+  animation: fadeInProfession 1.5s ease-out forwards;
+  animation-delay: 0.5s;
 }
 
-.developer-description{
+@keyframes fadeInProfession {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.developer-description {
   font-size: 38px;
   line-height: 1.5;
   font-weight: 400;
+  opacity: 0;
+  animation: fadeInDescription 1.8s ease-out forwards;
+  animation-delay: 1s;
+}
+
+@keyframes fadeInDescription {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 767.98px) {
-
-  .introduction-container{
+  .introduction-container {
     padding: 20px 10px;
   }
 
-  .developer-description{
+  .developer-description {
     font-size: 1rem;
   }
 }

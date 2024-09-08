@@ -1,12 +1,58 @@
-.card-container{
-  display: flex;
+.portfolio-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 1.8s ease-out, transform 1.8s ease-out;
+}
+
+.portfolio-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.card--container{
+  //display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 100px;
+  margin: 0 150px;
 }
 
 .card {
-  margin: 10px;
+
+  &--secondary {
+    display: flex;
+
+    &__item{
+      margin: 30px 10px 0 10px;
+      display: flex;
+    }
+  }
+
+  &--pizza{
+
+    margin-top: 40px;
+
+    &--block{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__items{
+        flex: 1;
+        margin: 0 10px;
+        padding: 0 20px 0 20px;
+        display: flex;
+        flex-direction: column;
+
+        &p{
+          margin-bottom: auto;
+        }
+      }
+    }
+
+
+  }
 }
 
 .description {

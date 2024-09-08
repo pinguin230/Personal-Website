@@ -1,78 +1,101 @@
 .services-container {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
   max-width: 1200px;
   margin: 0 auto;
   padding: 40px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
 
   h1 {
     text-align: center;
-    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 40px;
   }
 
   .content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .text-column {
-    flex: 4;
+    flex: 1;
     padding: 20px;
+    max-width: 600px;
 
-    p{
-      font-size: 25px;
-    }
-
-    a {
-      text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
+    p {
+      font-size: 1.2rem;
+      line-height: 1.6;
+      margin-bottom: 20px;
     }
   }
 
   .service-column {
-    flex: 3;
-    padding: 40px;
+    flex: 1;
+    padding: 20px;
+    text-align: center;
 
     .service {
-      padding: 0 40px;
+      padding: 20px;
       border-radius: 8px;
+      transition: all 0.3s ease;
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      text-align: center;
+
+      &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        transform: translateY(-5px);
+      }
 
       img {
-        max-width: 100px;
+        max-width: 80px;
         margin-bottom: 20px;
+        transition: all 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
       }
 
       h2 {
+        font-size: 1.8rem;
         margin-bottom: 10px;
+        font-weight: 600;
       }
 
       h3 {
-        margin-top: 20px;
+        font-size: 1.4rem;
+        margin-bottom: 20px;
+        font-weight: 500;
       }
 
       p {
-        font-size: 20px;
-        margin-bottom: 10px;
+        font-size: 1rem;
+        line-height: 1.5;
       }
     }
   }
 
   @media (max-width: 767.98px) {
-    .text-column {
-      p {
-        text-align: left;
-        font-size: 1rem;
-      }
+    .text-column, .service-column {
+      flex: 1 1 100%;
+      max-width: 100%;
+      padding: 10px;
     }
 
-    .service-column, .service {
-      padding: 0 !important;
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      font-size: 1rem;
     }
   }
 }
-

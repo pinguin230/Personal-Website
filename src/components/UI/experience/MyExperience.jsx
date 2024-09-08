@@ -1,12 +1,16 @@
 import "./MyExperience.scss";
 import {useTheme} from "../../../ThemeContext.jsx";
+import useIntersectionObserver from "../../../hooks/useUntersectionObserver.js";
 
 const MyExperience = () => {
 
   const { theme } = useTheme();
+  const { isVisible, elementRef } = useIntersectionObserver();
 
   return (
-    <div className={`container ${theme}`}>
+    <div
+      ref={elementRef}
+      className={`container ${theme} ${isVisible ? 'visible' : ''}`}>
       <h1>About my education, courses I took, and previous experience</h1>
       <div className="courses">
         <div className="course">
